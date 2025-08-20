@@ -1,0 +1,22 @@
+RECIPES
+r_fecl3: fe + 3 hcl -> fecl3 + 3h, 30s
+r_hcl: h + cl -> hcl, 3s 
+
+MACHINES
+cr1
+cr2
+
+INPUT
+fe
+3 cl
+
+OUTPUT
+1 fecl3
+
+LOCAL
+3 hcl
+3 h
+
+PROCESS
+3 r_hcl,cr1
+1 r_fecl3,cr2

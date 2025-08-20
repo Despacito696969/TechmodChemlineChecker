@@ -414,7 +414,7 @@ _main :: proc() -> bool {
             error^ = true
          }
          if next.type != .EOF {
-            errorf_pos(next.pos, "Unexpected data")
+            errorf_pos(next.pos, "Expected end of line")
             error^ = true
          }
          if success {

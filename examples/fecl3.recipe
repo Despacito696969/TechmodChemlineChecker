@@ -14,9 +14,8 @@ OUTPUT
 1 fecl3
 
 LOCAL
-3 hcl 
 3 h
 
 PROCESS
-3 r_hcl,cr1
-1 r_fecl3,cr2
+3 r_hcl,cr1 -> hcl
+1 r_fecl3,cr2|hcl
