@@ -591,6 +591,7 @@ _main :: proc() -> bool {
          if top.time > current_time && machine_freed {
             break
          }
+         current_time = max(top.time, current_time)
          pqueue.pop(&next_action_queue)
 
          recipe_finished := current_recipe[top.machine_id].(^Recipe)

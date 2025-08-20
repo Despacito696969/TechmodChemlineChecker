@@ -17,5 +17,6 @@ LOCAL
 3 h
 
 PROCESS
-3 r_hcl,cr1 -> hcl
-1 r_fecl3,cr2|hcl
+1 r_hcl,cr1
+2 r_hcl,cr1 -> hcl_done
+1 r_fecl3,cr2|hcl_done
